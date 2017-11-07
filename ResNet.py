@@ -30,7 +30,7 @@ def subsample(inputs, factor, scope=None):
 # endregion
 
 # region conv2d_same():bottleneck()中的三层卷积的中间一层，resnet_v2()的最开始的卷积层
-# 这个卷积函数，用在两个地方,。
+# 这个卷积函数，用在两个地方:
 # 一处是在残差单元的核心实现bottleneck()的中间一层，
 # 另一处是在整个网络的核心实现resnet_v2()的最开始的卷积层用到过一次。
 def conv2d_same(inputs, num_outputs, kernel_size, stride, scope=None):
